@@ -1,0 +1,188 @@
+@import 'variables.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Yeseva One', cursive;
+    margin: 2%;
+    padding: 1%;
+    color: #9D705F;
+}
+p{
+    color:black
+}
+
+.titulosGenerales{
+    color:#9D705F
+}
+h2{
+    margin: 1%;
+    padding: 1%;
+    color:#9D705F;
+}
+
+h3{
+    color: #6d4535;
+    margin: 1%;
+    padding: 1%;
+}
+.descripcionProd{
+    color: $colorTerciario;
+    align-content: center;
+}
+.tituloCep{
+    color:#6d4535;
+    margin: 1%;
+    padding: 1%;
+}
+
+ header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color:#9D705F;
+}  
+
+
+/* footer */
+.fotosRedes{
+    background-color: #9D705F;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #9D705F, #cf9f8c, #fff );
+}
+.fotosRedes__imagenes{
+    display: flex;  
+    padding: 1cm;
+    margin-top: auto; 
+    justify-content: center;
+    align-items: center;     
+}
+
+.fotosRedes__tamaño{
+    width: 10%;
+} 
+.copyRight{
+    text-align: center;
+}
+
+
+/* seccion comunidad */
+.ecoladrillos{
+    display: flex;  
+    margin: 10cm;
+    padding: 0cm;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.ecoladrillo__imagen{
+    width: 40%;
+    margin: 50px;
+}
+/* fuentes de texto */
+.materiales{
+    font-family: 'Yeseva One', cursive;
+    font-size: 15px;
+}
+/* video seccion comunidad */
+.videoComu{
+    margin-left: 30%;
+}
+
+/* Imagenes de inicio para aplicar grids */ 
+.destacados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+    padding: 20px;
+    grid-gap: 10px;
+    justify-content: center;   
+}
+
+
+.destacados__titulos{
+    color: black;
+    text-align:start;
+}
+
+/* transiciones */
+.destacados .destacados__imagenes--prod{
+    height: 200px; width: 200px;
+}
+.producInicio .destacados__imagenes--prod:hover{
+
+    height: 300px; width: 300px;
+}
+
+/* imagenes seccion productos  */
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    margin: 10px 10px 10px 70px;
+    grid-gap: 10px;
+}
+
+.productos__div--img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* estilo con sass */
+.tituloProd{
+    font-family: $tituloFuente;
+    margin: 2%;
+    padding: 1%;
+    color: $colorPrincipal;
+    border-bottom:solid 3px $colorPrincipal;
+}
+.logo{
+    width: 160px;
+}
+/* seccion de imagenes destacadas con media querie */
+@media screen and (max-width:575px){
+    .producInicio{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    }
+    
+}
+
+/* estilos con SASS */
+/* formulario seccion contacto */
+form{
+    font-family: $tituloFuente;
+    color: $colorTerciario;
+    margin: 20px;
+    padding: 20px;
+}
+.formulario{
+    margin: 20px;
+    padding: 5px;
+}
+
+/* seccion comunidad */
+ul{
+    li{
+        font-family: $tituloFuente;
+    }
+}
+
+p{
+    font-family: $tituloFuente;
+    color: $colorTerciario;
+    margin-left: 10px;
+}
+.composta{
+    width: 40%;
+    margin: 50px;
+}    
+

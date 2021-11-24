@@ -1,0 +1,12 @@
+@import 'varibles.scss';
+
+@mixin destacados__imagenes--prod {
+    height: $alto;
+    width: $ancho;
+}
+
+.destacados{
+    @include destacados__imagenes--prod (400px, 300px);
+
+}
+
