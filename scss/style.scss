@@ -65,7 +65,7 @@ h3{
 }
 
 .fotosRedes__tamaño{
-    width: 10%;
+    width: 3rem;
 } 
 .copyRight{
     text-align: center;
@@ -147,15 +147,41 @@ h3{
 .logo{
     width: 160px;
 }
-/* seccion de imagenes destacadas con media querie */
-@media screen and (max-width:575px){
-    .producInicio{
+/*  media querie en imagenes de index y productos */
+ @media screen and (max-width:760px){
+    .destacados{
+        display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        justify-content: center;
+        }
+      
+ }    
+@media screen and (max-width:320px){
+    .destacados{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-content: center;
+        }  
+    .iframeResponsive{
+        display: grid;
+        margin: 5px;
+        justify-content: flex-start;
+    }    
     
-}
-
+}    
+ 
 /* estilos con SASS */
 /* formulario seccion contacto */
 form{
@@ -164,6 +190,7 @@ form{
     margin: 20px;
     padding: 20px;
 }
+
 .formulario{
     margin: 20px;
     padding: 5px;
@@ -184,5 +211,6 @@ p{
 .composta{
     width: 40%;
     margin: 50px;
-}    
+} 
+
 

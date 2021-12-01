@@ -59,7 +59,7 @@ header {
   align-items: center; }
 
 .fotosRedes__tamaño {
-  width: 10%; }
+  width: 3rem; }
 
 .copyRight {
   text-align: center; }
@@ -133,11 +133,32 @@ header {
 .logo {
   width: 160px; }
 
-/* seccion de imagenes destacadas con media querie */
-@media screen and (max-width: 575px) {
-  .producInicio {
+/*  media querie en imagenes de index y productos */
+@media screen and (max-width: 760px) {
+  .destacados {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center; }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
     justify-content: center; } }
+
+@media screen and (max-width: 320px) {
+  .destacados {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center; }
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    justify-content: center; }
+  .iframeResponsive {
+    display: grid;
+    margin: 5px;
+    justify-content: flex-start; } }
 
 /* estilos con SASS */
 /* formulario seccion contacto */
